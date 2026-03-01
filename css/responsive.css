@@ -10,6 +10,9 @@
  *  - Feature boxes: fixed width float + fixed height container
  *  - Footer: three fixed-width floated columns
  *  - Logo: background image (not captured in browser save)
+ *  - #intro-home p { width: 645px } — causes horizontal overflow on mobile
+ *  - #body-home #headersocial { width: 572px } — same
+ *  - Browse bar icons: images copied to pages/images/ to satisfy style.css rules
  */
 
 /* ─── 1. Remove the hard minimum width ─────────────────────────────────── */
@@ -27,9 +30,20 @@ body {
 
 /* ─── 3. Logo — original CSS uses url(../images/bhl-logo-main.png) relative
          to style.css. We ship the image at pages/images/bhl-logo-main.png
-         so the original rule resolves correctly without any override needed.
-         The selector below is left as a comment for documentation only.    */
+         so the original rule resolves correctly without any override needed. */
 /* #logo h1 { background-image: url(...); } — no override needed */
+
+/* ─── 4. Fix fixed-width elements that cause horizontal overflow at all sizes */
+
+/* style.css: #intro-home p { width: 645px } — overflows on narrow viewports */
+#intro-home p {
+    width: auto;
+}
+
+/* style.css: #body-home #headersocial { width: 572px } */
+#body-home #headersocial {
+    width: auto;
+}
 
 /* ═══════════════════════════════════════════════════════════════════════════
    TABLET BREAKPOINT  (≤ 900px)
@@ -45,8 +59,8 @@ body {
     }
 
     /* ── Search bar ───────────────────────────────────────────────────────
-       The entire search section uses absolute positioning for every element.
-       Reset to normal flow. */
+       Every element was position:absolute. Reset to normal flow and lay the
+       text field + spyglass button side by side using floats. */
     #searchbar-home {
         min-height: 0;
         padding: 16px 0;
@@ -64,37 +78,33 @@ body {
         font-size: 14px;
     }
 
-    /* Search input — was position:absolute; width:556px */
+    /* Search input — float left, leaving 64px for the spyglass button (60px + 4px gap) */
     #searchbox-home .field {
         position: static;
-        display: block;
-        width: 100%;
+        float: left;
+        width: calc(100% - 64px);
         box-sizing: border-box;
-        height: auto;
-        padding: 8px 12px;
-        margin-bottom: 8px;
+        height: 40px;
+        padding: 4px 12px;
+        margin: 0 0 8px 0;
         font-size: 16px; /* prevents iOS zoom on focus */
     }
 
-    /* Submit button — was position:absolute; left:590px, background image only */
+    /* Submit button — was position:absolute; left:590px; background-image sprite.
+       Keep the original spyglass sprite from style.css (width:60px; height:40px;
+       background:url(../images/bg_searchhome_button.png); text-indent:-9999px).
+       Only reset position/float here — do NOT override background. */
     #searchbox-home .button {
         position: static;
-        display: inline-block;
-        width: auto;
-        height: auto;
-        text-indent: 0;
-        background: #5989b1;
-        color: #fff;
-        font: 14px Georgia;
-        padding: 8px 24px;
-        border: 0;
-        border-radius: 3px;
+        float: left;
+        margin: 0 0 8px 4px;
         cursor: pointer;
-        margin-bottom: 8px;
+        border: 0;
     }
 
-    /* Radio buttons + help icon row */
+    /* Radio buttons + help icon — clear the floated field and button above */
     #searchtype-home {
+        clear: both;
         padding: 8px 0 4px 0;
         font-size: 14px;
     }
@@ -105,6 +115,49 @@ body {
         display: inline-block;
         margin-left: 12px;
         font-size: 14px;
+    }
+
+    /* ── Browse bar ───────────────────────────────────────────────────────
+       Each li had a fixed pixel width (117–157px). The anchor inside had
+       padding-left:55px (for the left-aligned icon) and width:90px.
+       At mobile the icons are centred above the label text instead. */
+    #browsebar-home {
+        min-height: 0;
+    }
+
+    #browsebox-home ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Reset the base li a rule: padding-left:55px, width:90px, height:34px */
+    #browsebar-home li a {
+        width: auto;
+        height: auto;
+        padding: 36px 4px 8px 4px; /* top: space for centred icon */
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    /* Remove fixed widths on individual browse items */
+    #browsebar-home li.titles,
+    #browsebar-home li.authors,
+    #browsebar-home li.collection,
+    #browsebar-home li.contributor,
+    #browsebar-home li.year {
+        width: auto;
+        flex: 1 1 auto;
+    }
+
+    /* Centre the background icon (was left:10px top:10px, designed for
+       padding-left:55px layout — re-centre for the stacked mobile style) */
+    #browsebar-home li.titles a,
+    #browsebar-home li.authors a,
+    #browsebar-home li.collection a,
+    #browsebar-home li.contributor a,
+    #browsebar-home li.year a {
+        width: auto;
+        background-position: center 8px;
     }
 
     /* ── Feature boxes ────────────────────────────────────────────────────
@@ -136,10 +189,16 @@ body {
         box-sizing: border-box;
     }
 
-    /* Flickr/content area — was fixed height:210px */
+    /* Content area — was fixed height:210px with overflow:hidden */
     .featurebox-home .content {
         height: auto;
         overflow: visible;
+    }
+
+    /* RSS feed items — was width:274px; let it fill the box */
+    .rss-items {
+        width: auto;
+        max-width: 100%;
     }
 
     /* ── Header ───────────────────────────────────────────────────────────
@@ -169,6 +228,7 @@ body {
 
     #headersocial {
         float: none;
+        width: auto;
         margin-top: 0;
     }
 
@@ -193,39 +253,6 @@ body {
     footer .social {
         min-height: 0;
     }
-
-    /* ── Browse bar ───────────────────────────────────────────────────────
-       Buttons wrap naturally at narrow widths */
-    #browsebar-home {
-        min-height: 0;
-    }
-
-    #browsebox-home ul {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    /* Remove fixed widths on individual browse items */
-    #browsebar-home li.titles,
-    #browsebar-home li.authors,
-    #browsebar-home li.collection,
-    #browsebar-home li.contributor,
-    #browsebar-home li.year {
-        width: auto;
-        flex: 1 1 auto;
-    }
-
-    #browsebar-home li.titles a,
-    #browsebar-home li.authors a,
-    #browsebar-home li.collection a,
-    #browsebar-home li.contributor a,
-    #browsebar-home li.year a {
-        width: auto;
-        background-position: center 10px;
-        padding-top: 36px;
-        box-sizing: border-box;
-        text-align: center;
-    }
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
@@ -247,7 +274,7 @@ body {
         font-size: 13px;
     }
 
-    /* Browse bar: show in a simple 2-column grid */
+    /* Browse bar: 2-column grid at smallest sizes */
     #browsebox-home ul {
         gap: 4px;
     }
