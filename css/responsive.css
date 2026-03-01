@@ -201,6 +201,13 @@ body {
         max-width: 100%;
     }
 
+    /* Flickr carousel — jMyCarousel has inline style="width:258px".
+       Centre it within the now-full-width feature box. */
+    .jMyCarousel {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     /* ── Header ───────────────────────────────────────────────────────────
        Logo + nav + social icons: all floated. Stack them vertically. */
     header {
