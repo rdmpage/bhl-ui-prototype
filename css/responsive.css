@@ -1,0 +1,130 @@
+/*
+ * BHL Responsive CSS Overrides
+ *
+ * Layered on top of the existing BHL style.css.
+ * Targets the key fixed-width constraints that prevent mobile rendering.
+ *
+ * Original problem areas:
+ *   body          { min-width: 1030px }   <- blocks narrow viewports
+ *   .column-wrap  { width: 980px }        <- fixed container width
+ *   .socialcolumn { float: left; width: 260px } <- footer columns
+ *   header nav    { float: left }         <- nav needs mobile treatment
+ */
+
+/* ─── 1. Remove the hard minimum width ─────────────────────────────────── */
+body {
+    min-width: 0;
+}
+
+/* ─── 2. Make all containers fluid ─────────────────────────────────────── */
+.column-wrap {
+    width: 100%;
+    max-width: 980px;
+    box-sizing: border-box;
+    padding: 0 16px;
+}
+
+/* ─── 3. Tablet breakpoint (≤ 768px) ───────────────────────────────────── */
+@media screen and (max-width: 768px) {
+
+    /* Header: stack logo, nav, and social icons vertically */
+    header {
+        height: auto;
+    }
+    header .column-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 16px;
+    }
+    #logo h1 {
+        float: none;
+        margin-bottom: 8px;
+    }
+    header nav {
+        float: none;
+        padding: 0 0 8px 0;
+        overflow: visible;
+    }
+    #headersocial,
+    #altmetricbadge {
+        float: none;
+        margin-top: 4px;
+    }
+
+    /* Browse + search bar: stack vertically */
+    #content-nav .column-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    #browsebar,
+    #searchbar {
+        width: 100%;
+    }
+    #browsebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    /* Search input: full width */
+    #searchbar input.field {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Footer columns: stack vertically */
+    .socialcolumn {
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 16px;
+    }
+    .socialcolumn hr {
+        display: block;
+        border: 0;
+        border-top: 1px solid #ddd;
+        margin: 0 0 16px;
+    }
+    footer .social {
+        min-height: 0;
+    }
+}
+
+/* ─── 4. Mobile breakpoint (≤ 480px) ───────────────────────────────────── */
+@media screen and (max-width: 480px) {
+
+    /* Tighten body font slightly */
+    body {
+        font-size: 13px;
+    }
+
+    /* Browse bar: wrap items more aggressively */
+    #browsebar h3 {
+        display: none; /* hide "Browse by:" label to save space */
+    }
+    #browsebar ul li a {
+        font-size: 12px;
+    }
+
+    /* Search bar: stack type selectors */
+    #searchbar-searchtype {
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    /* Page title bars: allow text to wrap */
+    #page-title,
+    #page-title-titles,
+    #page-title-sections {
+        height: auto;
+        line-height: 1.4;
+        padding: 8px 0;
+    }
+    #page-title h1,
+    #page-title-titles h1 {
+        float: none;
+        font-size: 15px;
+        margin: 0;
+    }
+}
