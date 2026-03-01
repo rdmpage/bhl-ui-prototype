@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://www.biodiversitylibrary.org/ -->
+<html lang="en" class="js canvas canvastext no-touchevents" style=""><!--<![endif]--><head id="ctl00_Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="__funBackdropStyles">.fun-widget-backdrop-holder {
+  left: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+  position: fixed !important;
+  z-index: 2147483646 !important;
+  transition: opacity 0.2s ease-in-out !important;
+  transform: translateZ(99px) !important;
+  animation: fun-widget-backdrop 0.2s ease-in-out !important;
+}
+
+.fun-widget-backdrop {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  animation:
+    fun-widget-backdrop-rotate 1.5s infinite linear,
+    fun-widget-backdrop-fadein 0.6s ease-in-out !important;
+  padding: 0 !important;
+  margin: -30px 0 0 -30px !important;
+  width: 60px !important;
+  min-width: 60px !important;
+  max-width: 60px !important;
+  height: 60px !important;
+  min-height: 60px !important;
+  max-height: 60px !important;
+  border-radius: 50% !important;
+  border: 4px solid !important;
+  border-color: #e3e3e3 #e3e3e3 #666666 #666666 !important;
+}
+
+@keyframes fun-widget-backdrop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fun-widget-backdrop-fadein {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fun-widget-backdrop-rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 359deg;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9wcmVsb2FkZXIvYmFja2Ryb3AuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixvQkFBb0I7RUFDcEIsbUJBQW1CO0VBQ25CLHNCQUFzQjtFQUN0Qix1QkFBdUI7RUFDdkIseUJBQXlCO0VBQ3pCLDBCQUEwQjtFQUMxQiw4QkFBOEI7RUFDOUIsK0NBQStDO0VBQy9DLHNDQUFzQztFQUN0QywwREFBMEQ7QUFDNUQ7O0FBRUE7RUFDRSw2QkFBNkI7RUFDN0Isb0JBQW9CO0VBQ3BCLG1CQUFtQjtFQUNuQjs7MERBRXdEO0VBQ3hELHFCQUFxQjtFQUNyQixrQ0FBa0M7RUFDbEMsc0JBQXNCO0VBQ3RCLDBCQUEwQjtFQUMxQiwwQkFBMEI7RUFDMUIsdUJBQXVCO0VBQ3ZCLDJCQUEyQjtFQUMzQiwyQkFBMkI7RUFDM0IsNkJBQTZCO0VBQzdCLDRCQUE0QjtFQUM1Qix3REFBd0Q7QUFDMUQ7O0FBRUE7RUFDRTtJQUNFLFVBQVU7RUFDWjtFQUNBO0lBQ0UsVUFBVTtFQUNaO0FBQ0Y7O0FBRUE7RUFDRTtJQUNFLFVBQVU7RUFDWjtFQUNBO0lBQ0UsVUFBVTtFQUNaO0VBQ0E7SUFDRSxVQUFVO0VBQ1o7RUFDQTtJQUNFLFVBQVU7RUFDWjtBQUNGOztBQUVBO0VBQ0U7SUFDRSxZQUFZO0VBQ2Q7RUFDQTtJQUNFLGNBQWM7RUFDaEI7QUFDRiIsInNvdXJjZXNDb250ZW50IjpbIi5mdW4td2lkZ2V0LWJhY2tkcm9wLWhvbGRlciB7XG4gIGxlZnQ6IDAgIWltcG9ydGFudDtcbiAgdG9wOiAwICFpbXBvcnRhbnQ7XG4gIGJvdHRvbTogMCAhaW1wb3J0YW50O1xuICByaWdodDogMCAhaW1wb3J0YW50O1xuICB3aWR0aDogMTAwJSAhaW1wb3J0YW50O1xuICBoZWlnaHQ6IDEwMCUgIWltcG9ydGFudDtcbiAgZGlzcGxheTogYmxvY2sgIWltcG9ydGFudDtcbiAgcG9zaXRpb246IGZpeGVkICFpbXBvcnRhbnQ7XG4gIHotaW5kZXg6IDIxNDc0ODM2NDYgIWltcG9ydGFudDtcbiAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjJzIGVhc2UtaW4tb3V0ICFpbXBvcnRhbnQ7XG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlWig5OXB4KSAhaW1wb3J0YW50O1xuICBhbmltYXRpb246IGZ1bi13aWRnZXQtYmFja2Ryb3AgMC4ycyBlYXNlLWluLW91dCAhaW1wb3J0YW50O1xufVxuXG4uZnVuLXdpZGdldC1iYWNrZHJvcCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZSAhaW1wb3J0YW50O1xuICBsZWZ0OiA1MCUgIWltcG9ydGFudDtcbiAgdG9wOiA1MCUgIWltcG9ydGFudDtcbiAgYW5pbWF0aW9uOlxuICAgIGZ1bi13aWRnZXQtYmFja2Ryb3Atcm90YXRlIDEuNXMgaW5maW5pdGUgbGluZWFyLFxuICAgIGZ1bi13aWRnZXQtYmFja2Ryb3AtZmFkZWluIDAuNnMgZWFzZS1pbi1vdXQgIWltcG9ydGFudDtcbiAgcGFkZGluZzogMCAhaW1wb3J0YW50O1xuICBtYXJnaW46IC0zMHB4IDAgMCAtMzBweCAhaW1wb3J0YW50O1xuICB3aWR0aDogNjBweCAhaW1wb3J0YW50O1xuICBtaW4td2lkdGg6IDYwcHggIWltcG9ydGFudDtcbiAgbWF4LXdpZHRoOiA2MHB4ICFpbXBvcnRhbnQ7XG4gIGhlaWdodDogNjBweCAhaW1wb3J0YW50O1xuICBtaW4taGVpZ2h0OiA2MHB4ICFpbXBvcnRhbnQ7XG4gIG1heC1oZWlnaHQ6IDYwcHggIWltcG9ydGFudDtcbiAgYm9yZGVyLXJhZGl1czogNTAlICFpbXBvcnRhbnQ7XG4gIGJvcmRlcjogNHB4IHNvbGlkICFpbXBvcnRhbnQ7XG4gIGJvcmRlci1jb2xvcjogI2UzZTNlMyAjZTNlM2UzICM2NjY2NjYgIzY2NjY2NiAhaW1wb3J0YW50O1xufVxuXG5Aa2V5ZnJhbWVzIGZ1bi13aWRnZXQtYmFja2Ryb3Age1xuICAwJSB7XG4gICAgb3BhY2l0eTogMDtcbiAgfVxuICAxMDAlIHtcbiAgICBvcGFjaXR5OiAxO1xuICB9XG59XG5cbkBrZXlmcmFtZXMgZnVuLXdpZGdldC1iYWNrZHJvcC1mYWRlaW4ge1xuICAwJSB7XG4gICAgb3BhY2l0eTogMDtcbiAgfVxuICAzMyUge1xuICAgIG9wYWNpdHk6IDA7XG4gIH1cbiAgNjYlIHtcbiAgICBvcGFjaXR5OiAwO1xuICB9XG4gIDEwMCUge1xuICAgIG9wYWNpdHk6IDE7XG4gIH1cbn1cblxuQGtleWZyYW1lcyBmdW4td2lkZ2V0LWJhY2tkcm9wLXJvdGF0ZSB7XG4gIDAlIHtcbiAgICByb3RhdGU6IDBkZWc7XG4gIH1cbiAgMTAwJSB7XG4gICAgcm90YXRlOiAzNTlkZWc7XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style>
+<script async="" src="./Biodiversity Heritage Library_files/webtrends.min.js"></script><script async="" src="./Biodiversity Heritage Library_files/ANCRYWKV"></script><script type="text/javascript">
+(function(){
+window["loaderConfig"] = "/TSPD/?type=21";
+})();
+
+</script>
+
+<script type="text/javascript" src="./Biodiversity Heritage Library_files/saved_resource"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>
+	Biodiversity Heritage Library
+</title><meta name="description" content="The Biodiversity Heritage Library works collaboratively to make biodiversity literature openly available to the world as part of a global biodiversity community."><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="https://www.biodiversitylibrary.org/favicon.ico"><link rel="apple-touch-icon" href="https://www.biodiversitylibrary.org/apple-touch-icon.png"><link rel="stylesheet" href="./Biodiversity Heritage Library_files/style.css"><link rel="stylesheet" href="./Biodiversity Heritage Library_files/socicon.css" media="all"><link rel="stylesheet" href="./Biodiversity Heritage Library_files/cookieconsent.css"><link title="Biodiversity Heritage Library News [RSS]" href="https://blog.biodiversitylibrary.org/feed" type="application/rss+xml" rel="alternate">
+    <script src="./Biodiversity Heritage Library_files/modernizr-custom.js"></script> 
+
+    
+    <link href="./Biodiversity Heritage Library_files/jMyCarousel.css" type="text/css" rel="stylesheet">
+
+    
+
+    <!-- START OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Copyright (c) 2018 Webtrends Inc.  All rights reserved. -->
+    <script data-service="webtrends">
+    window.webtrendsAsyncInit=function(){
+        var dcs=new Webtrends.dcs().init({
+            dcsid:"dcsse0w37bdzpxzj2yuxm4sap_9g8y",
+            domain:"logs1.smithsonian.museum",
+            timezone:-5,
+            i18n:true,
+            fpcdom:".biodiversitylibrary.org",
+            plugins:{
+            }
+            }).track();
+    };
+    (function(){
+        var s=document.createElement("script"); s.async=true; s.src="/js/webtrends.min.js";    
+        var s2=document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s,s2);
+    }());
+    </script>
+    <noscript><img alt="dcsimg" id="dcsimg" width="1" height="1" src="//logs1.smithsonian.museum/dcsse0w37bdzpxzj2yuxm4sap_9g8y/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=10.4.23&amp;dcssip=www.biodiversitylibrary.org"/></noscript>
+    <!-- END OF SmartSource Data Collector TAG v10.4.23 -->
+    <!-- Fundraise Up: the new standard for online giving -->
+    <script>
+        (function (w, d, s, n, a) {
+            if (!w[n]) {
+                var l = 'call,catch,on,once,set,then,track,openCheckout'
+                    .split(','), i, o = function (n) {
+                        return 'function' == typeof n ? o.l.push([arguments]) && o
+                            : function () { return o.l.push([n, arguments]) && o }
+                    }, t = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s); j.async = !0; j.src = 'https://cdn.fundraiseup.com/widget/' + a + '';
+                t.parentNode.insertBefore(j, t); o.s = Date.now(); o.v = 5; o.h = w.location.href; o.l = [];
+                for (i = 0; i < 8; i++)o[l[i]] = o(l[i]); w[n] = o
+            }
+        })(window, document, 'script', 'FundraiseUp', 'ANCRYWKV');
+    </script>
+    <!-- End Fundraise Up -->
+<script id="altmetric-embed-js" src="./Biodiversity Heritage Library_files/altmetric_badges-71af3a1b3fbd117a822a28840a51dfe9740bb47c5c45ec164cc8a4b9eeb1645e.js"></script><link href="https://ucarecdn.com/" rel="dns-prefetch"></head>
+
+<body id="body-home">
+    <script type="module" src="./Biodiversity Heritage Library_files/cookieconsent-config.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', {
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            analytics_storage: 'denied',
+            functionality_storage: 'granted',
+            personalization_storage: 'denied',
+            wait_for_update: 500
+        });
+        gtag('set', 'ads_data_redaction', true);
+        //gtag('set', 'url_passthrough', true);
+        gtag('js', new Date());
+        gtag('config', 'G-KD1S13JQ03');
+    </script>
+    <script async="" src="./Biodiversity Heritage Library_files/js"></script>
+    <script data-service="ga">
+        gtag('consent', 'update', {
+            personalization_storage: 'granted',
+            functionality_storage: 'granted',
+            analytics_storage: 'granted'
+        });
+    </script>    
+    <script type="text/plain" data-category="analytics" data-service="!ga">
+        CookieConsent.eraseCookies(['_gid', /^_ga/], '/', location.hostname);
+    </script>
+    <noscript>
+        <div id="noscript-warning">BHL works best with JavaScript enabled</div>
+    </noscript>
+    <form name="aspnetForm" method="post" action="https://www.biodiversitylibrary.org/" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334">
+</div>
+        <div id="content-wrap">
+            <header>
+                <div class="column-wrap">
+                    <a id="logo" href="https://www.biodiversitylibrary.org/">
+		                <h1>Biodiversity Heritage Library</h1>
+                    </a>
+		            <nav>
+			     		<a href="https://about.biodiversitylibrary.org/">About</a>
+			            <a href="https://about.biodiversitylibrary.org/help/">Help</a>				            
+                        <a href="https://about.biodiversitylibrary.org/help/faq/">FAQ</a>
+                        <a href="https://www.biodiversitylibrary.org/contact">Feedback</a>                         
+		            </nav>
+                    <span id="altmetricbadge">
+                        <div data-badge-popover="bottom" data-badge-type="donut" data-uri="" data-hide-no-mentions="true" data-no-score="true" data-template="biodiversitylibrary" class="altmetric-embed" data-uuid="fd689cde-d879-b2b2-ed47-48e3890b996d"></div>
+                    </span>
+                    <span id="headersocial">
+                        <span id="socicons">
+                            <span style="display:inline-block;position:relative;top:-13px"><iframe title="Donate Button" src="./Biodiversity Heritage Library_files/saved_resource.html" frameborder="0" marginheight="0" marginwidth="0" width="107px" height="46px" id="XTBSDNXZ" scrolling="no" style="visibility: visible !important; position: static !important; display: inline-block !important; vertical-align: middle !important; height: 46px !important; min-height: 46px !important; max-height: 46px !important; width: 107px !important; min-width: 107px !important; max-width: 107px !important;"></iframe></span>
+                        <a href="https://bsky.app/profile/biodivlibrary.bsky.social" target="_blank"><span class="socicon socicon-bsky"><img src="./Biodiversity Heritage Library_files/socicon-bsky.png" alt="Open BlueSky" title="BlueSky"></span></a><a href="https://instagram.com/biodivlibrary" target="_blank"><span class="socicon socicon-insta"><img src="./Biodiversity Heritage Library_files/socicon-insta.png" alt="Open Instagram" title="Instagram"></span></a><a href="https://facebook.com/biodivlibrary" target="_blank"><span class="socicon socicon-fb"><img src="./Biodiversity Heritage Library_files/socicon-fb.png" alt="Open Facebook" title="Facebook"></span></a><a href="https://flickr.com/biodivlibrary" target="_blank"><span class="socicon socicon-flickr"><img src="./Biodiversity Heritage Library_files/socicon-flickr.png" alt="Open Flickr" title="Flickr"></span></a></span>
+                        <script type="text/javascript" src="./Biodiversity Heritage Library_files/socicon.js"></script>
+                    </span>
+                </div>
+            </header>
+            
+            
+            <div id="main">
+                
+<div class="column-wrap" style="position:relative">
+<div id="promo-home">
+<div id="heroimage-home"><img title="The quadrupeds of North America,. New York,V.G. Audubon,1851-54.." alt="The quadrupeds of North America,. New York,V.G. Audubon,1851-54.." src="./Biodiversity Heritage Library_files/03_home_pic_img.png"></div>
+
+<div id="newfuturebox-home" class="featurebox-home">
+    <h3>Future of BHL</h3>
+    <p style="margin:10px 0">BHL has entered a new chapter. Follow the latest news of our transition.<br><br></p>
+    <a class="featurebutton-home" target="_blank" rel="noopener noreferrer" href="https://about.biodiversitylibrary.org/about/future-of-bhl/">Learn More</a>
+</div>
+
+</div>
+</div>
+ <div id="intro-home" class="column-wrap" style="min-height:100px">
+    <div style="padding: 5px 0px">
+        <p class="intro-home-tagline">Inspiring discovery through free access to biodiversity knowledge.</p>
+        <p>The Biodiversity Heritage Library improves research methodology by collaboratively making biodiversity literature openly available to the world as part of a global biodiversity community.</p>
+        <p>Please read BHL's <a title="harmful content" href="https://about.biodiversitylibrary.org/about/harmful-content">Acknowledgment of Harmful Content</a></p>
+    </div>
+</div>
+
+
+<div id="searchbar-home">
+	    <div id="searchbox-home" class="column-wrap">
+            <span>Search across books and journals, scientific names, authors and subjects</span>
+            <input name="ctl00$mainContentPlaceHolder$tbSearchTerm" type="text" value="Search the catalog and full-text" id="tbSearchTerm" class="field">
+            <input type="submit" name="ctl00$mainContentPlaceHolder$btnSearchSubmit" value="submit" id="btnSearchSubmit" class="button">
+            <div id="searchtype-home">
+                <input value="F" name="ctl00$mainContentPlaceHolder$rdoSearchType" type="radio" id="rdoSearchTypeF" checked="checked"> <label for="rdoSearchTypeF">Full-text</label>
+                <input value="C" name="ctl00$mainContentPlaceHolder$rdoSearchType" type="radio" id="rdoSearchTypeC"> <label for="rdoSearchTypeC">Catalog</label>
+                &nbsp;<a target="_blank" rel="noopener noreferrer" style="left:169px" href="https://about.biodiversitylibrary.org/ufaqs/how-do-i-search-the-bhl-collection/"><img src="./Biodiversity Heritage Library_files/help.png" alt="Search help" title="What&#39;s This?" height="16" width="16"></a>
+            </div>
+            <a href="https://www.biodiversitylibrary.org/advsearch" class="advsearch-home">advanced search</a>
+        </div>
+</div>
+
+    <div id="browsebar-home">
+    <div id="browsebox-home" class="column-wrap">
+        <h2>Browse by:</h2>
+        <ul>
+            <li class="titles"><a class="png_bg" href="https://www.biodiversitylibrary.org/browse/titles/a">Title</a></li>
+            <li class="authors"><a class="png_bg" href="https://www.biodiversitylibrary.org/browse/authors/a">Author</a></li>
+            <li class="year"><a class="png_bg" href="https://www.biodiversitylibrary.org/browse/year">Date</a></li>
+            <li class="collection"><a class="png_bg" href="https://www.biodiversitylibrary.org/browse/collections">Collection</a></li>
+            <li class="contributor"><a class="png_bg" href="https://www.biodiversitylibrary.org/browse/contributors">Contributor</a></li>
+        </ul>
+    </div>
+    </div>
+    <div id="featured-home" class="column-wrap">
+        <div id="featureone-home" class="featurebox-home">
+            <h3>New on the</h3>
+            <h4>BHL <span>Blog</span></h4>
+             <span class="content">
+             <div class="rss-items"><div class="rss-item"><a class="rss-title" href="https://blog.biodiversitylibrary.org/2026/02/transition-update-8-field-museum-to-host-technical-infrastructure.html" target="_blank">Transition Update #8: The Field Museum to Host BHL’s Technical Infrastructure</a><div class="rss-description">With the Biodiversity Heritage Library now officially operating in its new chapter following its...</div></div><div class="rss-item"><a class="rss-title" href="https://blog.biodiversitylibrary.org/2026/02/celebrating-bhl-team.html" target="_blank">Celebrating the Team Stewarding BHL’s Next Chapter</a><div class="rss-description">As the Biodiversity Heritage Library enters its new chapter following the completion of its...</div></div><div class="rss-item"><a class="rss-title" href="https://blog.biodiversitylibrary.org/2026/01/transition-update-7-new-chapter-begins.html" target="_blank">BHL Transition Update #7: The New Chapter Begins</a><div class="rss-description">On 1 January 2026, the Biodiversity Heritage Library officially entered a new chapter.
+
+Since its...</div></div></div>
+             </span>
+            <a target="_blank" rel="noopener noreferrer" class="featurebutton-home" href="http://blog.biodiversitylibrary.org/">View More Blog Posts</a>
+        </div>
+             
+
+
+<div id="panFlickr">
+	
+    <div class="featurebox-home" id="featuretwo-home">
+        <h3>Today's Picks</h3>
+        <h4>Flickr <span>Stream</span></h4>
+        <span class="content">
+            <div class="jMyCarousel" style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; width: 258px; height: 210px;"><input type="button" class="next" style="opacity: 0.6; z-index: 200; position: absolute; right: 0px; top: 1px;"><input type="button" class="prev" style="opacity: 0.6; z-index: 200; position: absolute; left: 0px; top: 1px;">
+                <ul style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; width: 9288px; left: -3096px; height: 210px;"><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/6593832" title="The peaches of New York - Illustration, Text" style="overflow: hidden; float: left;"><img alt="Flickr image:The peaches of New York - Illustration, Text" src="./Biodiversity Heritage Library_files/6593832.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/10044990" title="Birds - Page [147]" style="overflow: hidden; float: left;"><img alt="Flickr image:Birds - Page [147]" src="./Biodiversity Heritage Library_files/10044990.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/10847151" title="Tijdschrift voor entomologie - Pl. 8" style="overflow: hidden; float: left;"><img alt="Flickr image:Tijdschrift voor entomologie - Pl. 8" src="./Biodiversity Heritage Library_files/10847151.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/12306686" title="Flora von Deutschland, Österreich und der Schweiz. - Pl. 124" style="overflow: hidden; float: left;"><img alt="Flickr image:Flora von Deutschland, Österreich und der Schweiz. - Pl. 124" src="./Biodiversity Heritage Library_files/12306686.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/12306686" title="Prof. dr. Thomé" s="" flora="" von="" deutschland,="" österreich="" und="" der="" schweiz="" -="" pl.="" 124'="" style="overflow: hidden; float: left;"><img alt="Flickr image:Prof. dr. Thomé" s="" flora="" von="" deutschland,="" österreich="" und="" der="" schweiz="" -="" pl.="" 124'="" src="./Biodiversity Heritage Library_files/12306686.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/12652786" title="Tropical wild life in British Guiana - Page 212" style="overflow: hidden; float: left;"><img alt="Flickr image:Tropical wild life in British Guiana - Page 212" src="./Biodiversity Heritage Library_files/12652786.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/15943608" title="The Auk - Fig. 8,  9" style="overflow: hidden; float: left;"><img alt="Flickr image:The Auk - Fig. 8,  9" src="./Biodiversity Heritage Library_files/15943608.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/33755447" title="Johann Andreas Naumann" s="" ...="" naturgeschichte="" der="" vögel="" deutschlands,="" nach="" eigenen="" erfahrungen="" entworfen="" -="" taf.="" 215'="" style="overflow: hidden; float: left;"><img alt="Flickr image:Johann Andreas Naumann" s="" ...="" naturgeschichte="" der="" vögel="" deutschlands,="" nach="" eigenen="" erfahrungen="" entworfen="" -="" taf.="" 215'="" src="./Biodiversity Heritage Library_files/33755447.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/33755457" title="Johann Andreas Naumann" s="" ...="" naturgeschichte="" der="" vögel="" deutschlands,="" nach="" eigenen="" erfahrungen="" entworfen="" -="" taf.="" 220'="" style="overflow: hidden; float: left;"><img alt="Flickr image:Johann Andreas Naumann" s="" ...="" naturgeschichte="" der="" vögel="" deutschlands,="" nach="" eigenen="" erfahrungen="" entworfen="" -="" taf.="" 220'="" src="./Biodiversity Heritage Library_files/33755457.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/42417378" title="Abbildung und Beschreibung der bekanntesten Schmetterlinge Deutschlands nach ihren drey Lebens-Perioden - Plate [10]" style="overflow: hidden; float: left;"><img alt="Flickr image:Abbildung und Beschreibung der bekanntesten Schmetterlinge Deutschlands nach ihren drey Lebens-Perioden - Plate [10]" src="./Biodiversity Heritage Library_files/42417378.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/47220666" title="Bibliotheca botanica - Taf. III" style="overflow: hidden; float: left;"><img alt="Flickr image:Bibliotheca botanica - Taf. III" src="./Biodiversity Heritage Library_files/47220666.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/47220666" title="Bibliotheca botanica. - Taf. III" style="overflow: hidden; float: left;"><img alt="Flickr image:Bibliotheca botanica. - Taf. III" src="./Biodiversity Heritage Library_files/47220666.jpg"></a></li>
+<li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/6593832" title="The peaches of New York - Illustration, Text" style="overflow: hidden; float: left;"><img alt="Flickr image:The peaches of New York - Illustration, Text" src="./Biodiversity Heritage Library_files/6593832.jpg"></a></li>
+<li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/10044990" title="Birds - Page [147]" style="overflow: hidden; float: left;"><img alt="Flickr image:Birds - Page [147]" src="./Biodiversity Heritage Library_files/10044990.jpg"></a></li>
+<li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/10847151" title="Tijdschrift voor entomologie - Pl. 8" style="overflow: hidden; float: left;"><img alt="Flickr image:Tijdschrift voor entomologie - Pl. 8" src="./Biodiversity Heritage Library_files/10847151.jpg"></a></li>
+<li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/12306686" title="Flora von Deutschland, Österreich und der Schweiz. - Pl. 124" style="overflow: hidden; float: left;"><img alt="Flickr image:Flora von Deutschland, Österreich und der Schweiz. - Pl. 124" src="./Biodiversity Heritage Library_files/12306686.jpg"></a></li>
+<li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/12306686" title="Prof. dr. Thomé" s="" flora="" von="" deutschland,="" österreich="" und="" der="" schweiz="" -="" pl.="" 124'="" style="overflow: hidden; float: left;"><img alt="Flickr image:Prof. dr. Thomé" s="" flora="" von="" deutschland,="" österreich="" und="" der="" schweiz="" -="" pl.="" 124'="" src="./Biodiversity Heritage Library_files/12306686.jpg"></a></li>
+<li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/12652786" title="Tropical wild life in British Guiana - Page 212" style="overflow: hidden; float: left;"><img alt="Flickr image:Tropical wild life in British Guiana - Page 212" src="./Biodiversity Heritage Library_files/12652786.jpg"></a></li>
+<li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/15943608" title="The Auk - Fig. 8,  9" style="overflow: hidden; float: left;"><img alt="Flickr image:The Auk - Fig. 8,  9" src="./Biodiversity Heritage Library_files/15943608.jpg"></a></li>
+<li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/33755447" title="Johann Andreas Naumann" s="" ...="" naturgeschichte="" der="" vögel="" deutschlands,="" nach="" eigenen="" erfahrungen="" entworfen="" -="" taf.="" 215'="" style="overflow: hidden; float: left;"><img alt="Flickr image:Johann Andreas Naumann" s="" ...="" naturgeschichte="" der="" vögel="" deutschlands,="" nach="" eigenen="" erfahrungen="" entworfen="" -="" taf.="" 215'="" src="./Biodiversity Heritage Library_files/33755447.jpg"></a></li>
+<li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/33755457" title="Johann Andreas Naumann" s="" ...="" naturgeschichte="" der="" vögel="" deutschlands,="" nach="" eigenen="" erfahrungen="" entworfen="" -="" taf.="" 220'="" style="overflow: hidden; float: left;"><img alt="Flickr image:Johann Andreas Naumann" s="" ...="" naturgeschichte="" der="" vögel="" deutschlands,="" nach="" eigenen="" erfahrungen="" entworfen="" -="" taf.="" 220'="" src="./Biodiversity Heritage Library_files/33755457.jpg"></a></li>
+<li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/42417378" title="Abbildung und Beschreibung der bekanntesten Schmetterlinge Deutschlands nach ihren drey Lebens-Perioden - Plate [10]" style="overflow: hidden; float: left;"><img alt="Flickr image:Abbildung und Beschreibung der bekanntesten Schmetterlinge Deutschlands nach ihren drey Lebens-Perioden - Plate [10]" src="./Biodiversity Heritage Library_files/42417378.jpg"></a></li>
+<li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/47220666" title="Bibliotheca botanica - Taf. III" style="overflow: hidden; float: left;"><img alt="Flickr image:Bibliotheca botanica - Taf. III" src="./Biodiversity Heritage Library_files/47220666.jpg"></a></li>
+<li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/47220666" title="Bibliotheca botanica. - Taf. III" style="overflow: hidden; float: left;"><img alt="Flickr image:Bibliotheca botanica. - Taf. III" src="./Biodiversity Heritage Library_files/47220666.jpg"></a></li>
+<li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/6593832" title="The peaches of New York - Illustration, Text" style="overflow: hidden; float: left;"><img alt="Flickr image:The peaches of New York - Illustration, Text" src="./Biodiversity Heritage Library_files/6593832.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/10044990" title="Birds - Page [147]" style="overflow: hidden; float: left;"><img alt="Flickr image:Birds - Page [147]" src="./Biodiversity Heritage Library_files/10044990.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/10847151" title="Tijdschrift voor entomologie - Pl. 8" style="overflow: hidden; float: left;"><img alt="Flickr image:Tijdschrift voor entomologie - Pl. 8" src="./Biodiversity Heritage Library_files/10847151.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/12306686" title="Flora von Deutschland, Österreich und der Schweiz. - Pl. 124" style="overflow: hidden; float: left;"><img alt="Flickr image:Flora von Deutschland, Österreich und der Schweiz. - Pl. 124" src="./Biodiversity Heritage Library_files/12306686.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/12306686" title="Prof. dr. Thomé" s="" flora="" von="" deutschland,="" österreich="" und="" der="" schweiz="" -="" pl.="" 124'="" style="overflow: hidden; float: left;"><img alt="Flickr image:Prof. dr. Thomé" s="" flora="" von="" deutschland,="" österreich="" und="" der="" schweiz="" -="" pl.="" 124'="" src="./Biodiversity Heritage Library_files/12306686.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/12652786" title="Tropical wild life in British Guiana - Page 212" style="overflow: hidden; float: left;"><img alt="Flickr image:Tropical wild life in British Guiana - Page 212" src="./Biodiversity Heritage Library_files/12652786.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/15943608" title="The Auk - Fig. 8,  9" style="overflow: hidden; float: left;"><img alt="Flickr image:The Auk - Fig. 8,  9" src="./Biodiversity Heritage Library_files/15943608.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/33755447" title="Johann Andreas Naumann" s="" ...="" naturgeschichte="" der="" vögel="" deutschlands,="" nach="" eigenen="" erfahrungen="" entworfen="" -="" taf.="" 215'="" style="overflow: hidden; float: left;"><img alt="Flickr image:Johann Andreas Naumann" s="" ...="" naturgeschichte="" der="" vögel="" deutschlands,="" nach="" eigenen="" erfahrungen="" entworfen="" -="" taf.="" 215'="" src="./Biodiversity Heritage Library_files/33755447.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/33755457" title="Johann Andreas Naumann" s="" ...="" naturgeschichte="" der="" vögel="" deutschlands,="" nach="" eigenen="" erfahrungen="" entworfen="" -="" taf.="" 220'="" style="overflow: hidden; float: left;"><img alt="Flickr image:Johann Andreas Naumann" s="" ...="" naturgeschichte="" der="" vögel="" deutschlands,="" nach="" eigenen="" erfahrungen="" entworfen="" -="" taf.="" 220'="" src="./Biodiversity Heritage Library_files/33755457.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/42417378" title="Abbildung und Beschreibung der bekanntesten Schmetterlinge Deutschlands nach ihren drey Lebens-Perioden - Plate [10]" style="overflow: hidden; float: left;"><img alt="Flickr image:Abbildung und Beschreibung der bekanntesten Schmetterlinge Deutschlands nach ihren drey Lebens-Perioden - Plate [10]" src="./Biodiversity Heritage Library_files/42417378.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/47220666" title="Bibliotheca botanica - Taf. III" style="overflow: hidden; float: left;"><img alt="Flickr image:Bibliotheca botanica - Taf. III" src="./Biodiversity Heritage Library_files/47220666.jpg"></a></li><li style="overflow: hidden; float: left; display: inline;"><a href="https://www.biodiversitylibrary.org/page/47220666" title="Bibliotheca botanica. - Taf. III" style="overflow: hidden; float: left;"><img alt="Flickr image:Bibliotheca botanica. - Taf. III" src="./Biodiversity Heritage Library_files/47220666.jpg"></a></li></ul>
+
+            </div> 
+        </span>
+        <a target="_blank" rel="noopener noreferrer" class="featurebutton-home" href="http://www.flickr.com/photos/biodivlibrary/sets/">View More Images on Flickr</a>
+    </div>
+
+</div>
+
+
+
+        
+      <!--  <div id="featurethree-home" class="featurebox-home"> -->
+             
+
+
+
+<div id="panSupportLarge">
+	
+    <div class="featurebox-home" id="">
+        <h3>Help Support <span>BHL</span></h3>
+        <h4>&nbsp;</h4>
+         <span class="content">
+             <a title="Donate Now" href="https://about.biodiversitylibrary.org/get-involved/donate/">
+                <img src="./Biodiversity Heritage Library_files/ss_butterfly.jpg" alt="Donate Now">
+            </a>
+         </span>
+         <a class="featurebutton-home" href="https://about.biodiversitylibrary.org/get-involved/donate/">Ways to Give</a>
+    </div>
+
+</div>
+
+
+      <!--  </div> -->
+    </div>
+
+            </div>
+        </div>
+    
+        <footer>
+            <div class="column-wrap">
+                <div class="social">
+                <div id="socialleft" class="socialcolumn">
+                    <div class="mailinglist">
+                        <h3>Join Our Mailing List</h3>
+                        <p>Sign up to receive the latest news, content highlights, and promotions</p>
+                        <a class="subscribe" title="Subscribe to BHL Newsletter" target="_blank" rel="noopener noreferrer" href="https://lp.constantcontactpages.com/sl/YKrBfqY/BHLsignup"><img src="./Biodiversity Heritage Library_files/envelope_icon.png" alt="subscribe here"> Subscribe Here</a>
+                    </div>
+                    <div class="getinvolved">
+                        <h3>Get Involved</h3>
+                        <a class="community" target="_blank" rel="noopener noreferrer" href="https://about.biodiversitylibrary.org/get-involved/">Ways To Contribute</a>
+                    </div>
+                </div>
+                <div id="socialmiddle" class="socialcolumn">
+                    <div class="harmfulcontent">
+                        <h3>Harmful Content</h3>
+                        <p>BHL acknowledges the existence of harmful content in many biodiversity science publications and original materials included in its collection. Please read BHL's <a title="harmful content" href="https://about.biodiversitylibrary.org/about/harmful-content">Acknowledgment of Harmful Content</a> for more information. </p>
+                    </div>
+                    <div class="toolsandservices">
+                        <h3>Tools and Services</h3>
+                        <p>BHL offers a wide range of free <a title="tools and services" href="https://about.biodiversitylibrary.org/tools-and-services/">tools and services</a> to support the use and re-use of our collections and data.</p>
+                    </div>
+                </div>
+                <div id="socialright" class="socialcolumn">
+                    <h3>Now Online    <a title="Recent RSS" href="https://www.biodiversitylibrary.org/recentrss">
+                    <img style="vertical-align: middle;" alt="RSS" src="./Biodiversity Heritage Library_files/rss.png">
+                    </a></h3>
+                    <div class="onlinestats">
+                    <strong>202,306</strong>
+                    titles
+                    <br>
+                    <strong>324,747</strong>
+                    volumes
+                    <br>
+                    <strong>63,808,109</strong>
+                    pages
+                    <br>
+                    <a title="Recent Additions" href="https://www.biodiversitylibrary.org/recent">Recent Additions</a>
+                    </div>
+                    <div class="ourpartners">
+                        <h3>BHL Consortium</h3>
+                        <p>BHL operates as a <a title="consortium" href="https://about.biodiversitylibrary.org/about/bhl-consortium">worldwide consortium</a> of natural history, botanical, research, and national libraries working together to digitize the natural history literature held in their collections and make it freely available for open access as part of a global "biodiversity community."</p>
+                    </div>
+                </div>
+                </div>
+                <div class="floatclear"></div>
+            </div>
+            <nav> 
+                <div class="column-wrap" style="text-align:center">
+                    <a href="https://about.biodiversitylibrary.org/help/copyright-and-reuse/">Copyright and Reuse</a> |
+                    <a href="https://about.biodiversitylibrary.org/tools-and-services/data-disclaimer/">Data Disclaimer</a> |
+                    <a href="https://about.biodiversitylibrary.org/tools-and-services/developer-and-data-tools/">Developer and Data Tools</a> |
+		            <a href="https://about.biodiversitylibrary.org/about/bhl-consortium/">Partners</a> |
+                    <a href="http://si.edu/Privacy">Privacy</a> |
+                    <a data-cc="show-preferencesModal" href="https://www.biodiversitylibrary.org/#" aria-haspopup="dialog">Cookies</a> |
+                    <a href="http://si.edu/Termsofuse">Terms of Use</a>	            
+                </div>
+            </nav>
+            <nav>
+                <div class="column-wrap" id="footersponsordiv">
+                    <iframe title="Donate Button" src="./Biodiversity Heritage Library_files/saved_resource(1).html" frameborder="0" marginheight="0" marginwidth="0" width="107px" height="46px" id="XTBSDNXZ" scrolling="no" style="visibility: visible !important; position: static !important; display: inline-block !important; vertical-align: middle !important; height: 46px !important; min-height: 46px !important; max-height: 46px !important; width: 107px !important; min-width: 107px !important; max-width: 107px !important;"></iframe>
+                </div>
+            </nav>
+        </footer>
+        <script src="./Biodiversity Heritage Library_files/jquery.min.js"></script>
+        <script>!window.jQuery && document.write(unescape('%3Cscript src="/js/libs/jquery-3.7.1.min.js"%3E%3C/script%3E'))</script>
+         <script type="text/javascript" src="./Biodiversity Heritage Library_files/jMyCarousel.js" language="javascript"></script>
+        
+<script type="text/javascript">
+//<![CDATA[
+    $(document).ready(function () {
+        var searchDefaultTexts = ["Search the catalog and full-text", "Search the catalog"];
+
+        $('#tbSearchTerm')
+            .val(searchDefaultTexts[0])
+            .focus(function () {
+                if ($.inArray($(this).val(), searchDefaultTexts) >= 0) {
+                    $(this).val("");
+                }
+            })
+            .blur(function () {
+                if ($.trim($(this).val()) == "") {
+                    if ($("#rdoSearchTypeF").is(":checked")) $(this).val(searchDefaultTexts[0]);
+                    if ($("#rdoSearchTypeC").is(":checked")) $(this).val(searchDefaultTexts[1]);
+                }
+            });
+
+        $('#rdoSearchTypeF')
+            .change(function () {
+                if ($(this).is(':checked')) {
+                    if ($.inArray($('#tbSearchTerm').val(), searchDefaultTexts) >= 0) $('#tbSearchTerm').val(searchDefaultTexts[0]);
+                }
+            });
+
+        $('#rdoSearchTypeC')
+            .change(function () {
+                if ($(this).is(':checked')) {
+                    if ($.inArray($('#tbSearchTerm').val(), searchDefaultTexts) >= 0) $('#tbSearchTerm').val(searchDefaultTexts[1]);
+                }
+            });
+
+        $('#btnSearchSubmit').click(function (e) {
+            if ($.inArray($("#tbSearchTerm").val(), searchDefaultTexts) >= 0) {
+                e.preventDefault();
+                return false;
+            }
+        });
+    });
+//]]>
+</script>
+   
+        <script type="text/javascript">
+            $(function () {
+                $('.jMyCarousel').jMyCarousel({
+                    visible: '1',
+                    auto: false,
+                    circular: true,
+                    eltByElt: true,
+                    evtStart: 'mousedown',
+                    evtStop: 'mouseup',
+                    height: 210,
+                    speed: 200
+                });
+            });
+    </script>
+
+
+
+        <script src="./Biodiversity Heritage Library_files/plugins.js"></script> 
+          <script src="./Biodiversity Heritage Library_files/script.js"></script> 
+        <script src="./Biodiversity Heritage Library_files/embed.js" data-service="altmetric"></script>
+    </form>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d584c063e5eb31f',t:'MTc3MjM2OTUyNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./Biodiversity Heritage Library_files/saved_resource(2).html"></iframe>
+</body><script type="text/javascript" charset="UTF-8" async="" src="./Biodiversity Heritage Library_files/448795c95497.elementsApi.js"></script><script type="text/javascript" charset="UTF-8" async="" src="./Biodiversity Heritage Library_files/checkout.84c0e39ebe84c44fc617.js"></script><script type="text/javascript" charset="UTF-8" async="" src="./Biodiversity Heritage Library_files/checkout-vendors.6e5d63b9e1afeb17520f.js"></script><script type="text/javascript" charset="UTF-8" async="" src="./Biodiversity Heritage Library_files/checkout-styles.dbb47b077a522a755dd0.js"></script><script type="text/javascript" charset="UTF-8" async="" src="./Biodiversity Heritage Library_files/checkout-sentry-vendor.af84ed23f4646061ab38.js"></script></html>
